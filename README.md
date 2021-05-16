@@ -11,4 +11,6 @@ Requirements;
 
 -Progbar (https://forum.cfx.re/t/release-progress-bars-1-0-standalone/526287) --Not necessary, just comment out exports from client.lua
 
+-Mythic notify (Though you can easily switch notifications from client.lua, just comment out mythic triggers and use ESX.ShowNotification('Hello world')
+
 -ESX framework
