@@ -1,7 +1,14 @@
 Config = {}
 
+Config.itemName = "lootchest"
+
+Config.second = 1000
+
+Config.model = "ch_prop_ch_crate_full_01a"
+
+Config.ChestOpeningTime = 12 * Config.second
+
 Config.LootChestitems = {
- --Here are some examples using Items, Weapons and Money ( cash )
     [1] = { 
         { itemName = 'bread', howmany = 1, type = 'item'},
 		{ itemName = 'weapon_pistol', howmany = 1, ammo = 50, type = 'weapon'},

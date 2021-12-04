@@ -2,14 +2,17 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-ESX.RegisterUsableItem("lootchest", function(source)
+ESX.RegisterUsableItem(Config.itemName, function(source)
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
-    xPlayer.removeInventoryItem('lootchest', 1)
+    xPlayer.removeInventoryItem(Config.itemName, 1)
     TriggerClientEvent('slerba_lootchest:open', _source)
-    Citizen.Wait(13400)
+end)
 
+
+RegisterNetEvent("")
+AddEventHandler("", function()
     local RandomBracket = math.random(1, #Config.LootChestitems)
 
     for k,v in pairs(Config.LootChestitems[RandomBracket]) do 
